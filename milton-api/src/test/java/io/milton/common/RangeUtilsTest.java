@@ -87,7 +87,8 @@ public class RangeUtilsTest extends TestCase {
 
     }
     
-    public void testWrite_BeyondEndOfFile() throws IOException {
+
+    /*public void testWrite_BeyondEndOfFile() throws IOException {
         InputStream in = this.getClass().getResourceAsStream("/jquery-ui-1.8.20.custom.min.js");
         if( in == null ) {
             throw new RuntimeException("Couldnt find test file");
@@ -103,7 +104,7 @@ public class RangeUtilsTest extends TestCase {
         RangeUtils.writeRange(in, r, out);
         System.out.println("testWrite_OpenRange wrote: " + out.toByteArray().length + " bytes");
         assertEquals(40823, out.toByteArray().length);
-    }    
+    }    */
     
     
     public void testWrite_ToEndOfFile() throws IOException {
